@@ -1,0 +1,47 @@
+/* Remove or comment out styles that conflict with Tailwind CSS */
+
+/* General styles for the root element */
+#root {
+  max-width: 1280px; /* You can keep this if you want to limit the width */
+  margin: 0 auto; /* Center the content */
+  padding: 2rem; /* You can keep this padding */
+  text-align: center; /* This can be removed if you want to control text alignment with Tailwind */
+}
+
+/* Remove or adjust styles that may conflict with Tailwind's utility classes */
+.logo {
+  height: auto; /* Remove fixed height to allow Tailwind to control sizing */
+  padding: 0; /* Remove padding to avoid conflicts */
+  will-change: auto; /* Remove this if not necessary */
+  transition: none; /* Remove transition if not needed */
+}
+
+/* Remove hover effects if they conflict with Tailwind */
+.logo:hover {
+  filter: none; /* Remove or adjust hover effects */
+}
+
+/* Remove or adjust keyframes if not used */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Remove or adjust media queries if not needed */
+@media (prefers-reduced-motion: no-preference) {
+  /* Remove or adjust styles that conflict with Tailwind */
+}
+
+/* Remove or adjust card styles if not needed */
+.card {
+  padding: 0; /* Remove padding to avoid conflicts */
+}
+
+/* Remove or adjust read-the-docs styles if not needed */
+.read-the-docs {
+  color: inherit; /* Remove or adjust color to avoid conflicts */
+}
