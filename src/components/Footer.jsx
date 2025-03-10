@@ -6,7 +6,7 @@ const Footer = () => {
         <a
           className="footer__link text-black hover:underline"
           onClick={() =>
-            window.open("mailto:saicharanpagidi8999@gmail.com", "_blank")
+            window.open("mailto:example@gmail.com", "_blank")
           }
         >
           saicharanpagidi8999
